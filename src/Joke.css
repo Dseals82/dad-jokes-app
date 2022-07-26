@@ -82,7 +82,6 @@
   font-size: 3rem;
   margin-left: auto;
   border-radius: 50%;
-  /* box-shadow: 0 10px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1); */
 }
 
 .Joke-smiley:hover {
@@ -110,6 +109,17 @@
   }
 }
 
+@media screen and (min-width: 1346px) {
+  .Joke-smiley {
+    box-shadow: 0 10px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 1222px) {
+  .JokeList-btn {
+    width: 70%;
+  }
+}
 
 @media screen and (max-width: 986px) {
   .Joke-smiley {
@@ -126,50 +136,72 @@
 
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 865px) {
+  .JokeList-title {
+    font-size: 2.5rem;
+  }
+  
+}
+
+@media screen and (max-width: 848px) {
  
-  .jokeList {
-    flex-direction: column !important;
+  .JokeList {
+    flex-direction: column;
+    
+  }
+  .JokeList-sidebar {
+    flex-direction: row;
+    width: 100%;
+  }
+  .JokeList-title {
+    font-size: 2rem;
+  }
+  .JokeList-sidebar img {
+    width: 150px;
+  }
+  .JokeList-btn {
+    width: 22%;
+  }
+  
+}
+
+@media screen and (max-width: 726px ) {
+  .Joke {
+    flex-direction: column;
     align-items: center;
-    width: 80%;
-    height: 80%;
   }
 
-  .JokeList-sidebar {
-    background: #9575cd;
-    display: flex;
-    flex-direction: column !important;
-    align-items: center;
-    /* width: 30%; */
+  .Joke-smiley {
+    margin: auto;
+    box-shadow: 0 10px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  }
+ 
+
+  .Joke-buttons {
+    margin: 0;
+  }
+
+  .Joke-text {
     text-align: center;
-    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 10%), inset 0 0 25px #7e57c2;
-    z-index: 2;
+  }
 }
 
-.JokeList-sidebar img {
-  width: 150px;
-}
+@media screen and (max-width: 636px) {
+  .JokeList-sidebar {
+    flex-direction: column;
+  }
 
-.JokeList-title {
-  font-size: 2rem;
-  margin: 2rem;
-  color: white;
-  font-weight: 300;
-  letter-spacing: 0.6rem;
-}
+  .JokeList-btn {
+    width: 90%;
+  }
 
-.JokeList-btn {
-  font-size: 1rem;
-  border-radius: 2rem;
-  padding: 1rem 2rem;
-  color: white;
-  font-weight: 700;
-  border: none;
-  outline: none;
-  margin: 2rem;
-  cursor: pointer;
-  transition: 0.8s cubic-bezier(0.2, 1, 0.2, 1);
-  background: linear-gradient( 135deg, rgba(179, 229, 252, 1) 0%, rgba(179, 229, 252, 1) 50%, rgba(240, 98, 146, 1) 50%, rgba(240, 98, 146, 1) 100% );
-  box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 10%);
-}
+  .JokeList-sidebar img {
+    width: 70px;
+  }
+
+  .JokeList-jokes {
+    width: 100%;
+    
+  }
+  
 }
